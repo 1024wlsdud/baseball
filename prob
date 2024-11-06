@@ -1,0 +1,12 @@
+service prob
+{
+    disable         = no
+    socket_type     = stream
+    wait            = no
+    user            = prob
+    type            = UNLISTED
+    port            = 10005
+    bind            = 0.0.0.0
+    server          = /home/prob/baseball
+    log_on_failure  += USERID
+}
